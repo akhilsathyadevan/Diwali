@@ -1,4 +1,5 @@
 const express=require('express');
+const port=process.env.PORT||5000
 const nodemailer=require('nodemailer');
 const Userdata=require('./src/model/userdata')
 const app=new express();
@@ -102,4 +103,6 @@ app.post('/send/:id', (req, res) => {
 
 })
 
-app.listen(5000);
+app.listen(port,()=>{
+    console.log("server ready at"+port)
+});
