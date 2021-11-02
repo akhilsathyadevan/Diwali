@@ -93,6 +93,7 @@ app.post('/send/:id', (req, res) => {
                 } else {
                     console.log('Email sent successfully');
                     res.send("<h1 style='text-align:center; color:green; background-color:yellow;'>Please check  Mail</h1>")
+                    
                   
                 }
             });
@@ -102,6 +103,7 @@ app.post('/send/:id', (req, res) => {
         })
 
 })
+
 
 app.listen(port,()=>{
     console.log("server ready at"+port)
