@@ -11,18 +11,30 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
 </head>
-<body style="background: #000000;">
+<body style="background:black;">
     <div style="width: 100%;">
         <iframe src="https://embed.lottiefiles.com/animation/82933" style="width: 100%;"></iframe>
     </div>
-    <h1>Happy Diwali <%=wish.name%> </h1>
+    <h1>Happy Diwali </h1>
+    <div style="width: 100%;">
     <iframe src="https://embed.lottiefiles.com/animation/68064" style=" width: 100%;"></iframe>
+   </div>
+    <br>
 
     <div class="container">
         <form action="/send/<%=wish._id%>" method="POST">
     
-            <button class="btn btn-success" type="submit"> Send a Diwali Wish 
+            <button class="btn btn-success" style="align-self: center; width: 100%;" type="submit"> Send a Diwali Wish via Mail
                 </button>
+                
+        </form> 
+        <br>
+        <br>
+        <form action="/" method="get">
+    
+            <button class="btn btn-success" style="align-self: center;width: 100%;" type="submit">Go to home and Wish Your Friend
+                </button>
+                
         </form> 
 
     

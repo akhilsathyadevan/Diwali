@@ -80,9 +80,9 @@ app.post('/send/:id', (req, res) => {
             let mailDetails = {
                 from: 'sa2184396@gmail.com',
                 to: wish.email,
-                subject: 'Happy Diwali ' + wish.username,
-                text: 'hi ' + wish.username + ' , click the  link  to get your Diwali wishes.' +
-                    ' https: //diwali.herokuapp.com/main/' + wish._id
+                subject: 'Happy Diwali ' + wish.name,
+                text: 'hi ' + wish.name + ' , click the  link  to get your Diwali wishes.' +
+                    ' https://diwaliwishing.herokuapp.com/main/' + wish._id
 
             };
 
